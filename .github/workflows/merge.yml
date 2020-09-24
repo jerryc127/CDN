@@ -12,7 +12,7 @@ jobs:
       with:
         github-token: "${{ secrets.GT }}"
     - name: Merge
-      uses: "pascalgn/automerge-action@c29cef1b62bfb675777896255a70c69fc01bcfe4"
+      uses: pascalgn/automerge-action@v0.10.0
       with:
         GITHUB_TOKEN: "${{ secrets.GT }}"
         MERGE_METHOD: 'squash'
