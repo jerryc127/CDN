@@ -15,5 +15,5 @@ jobs:
       uses: squalrus/merge-bot@v0.4.2
       if: github.actor == 'imgbot[bot]'
       with:
-        GITHUB_TOKEN: ${{ secrets.GT }}
+        GITHUB_TOKEN: "${{ secrets.GT }}"
         method: squash
