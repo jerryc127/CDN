@@ -12,8 +12,8 @@ jobs:
       with:
         github-token: "${{ secrets.GT }}"
     - name: Merge
-      uses: squalrus/merge-bot@v0.4.2
-      if: github.actor == 'imgbot[bot]'
+      uses: "pascalgn/automerge-action@c29cef1b62bfb675777896255a70c69fc01bcfe4"
       with:
         GITHUB_TOKEN: "${{ secrets.GT }}"
-        method: squash
+        method: 'squash'
+        MERGE_FILTER_AUTHOR: 'imgbot[bot]'
