@@ -1,5 +1,5 @@
 {
-  "颜文字": {
+  "顏文字": {
     "type": "emoticon",
     "container": [
       {
@@ -1293,7 +1293,7 @@
       }
     ]
   },
-  "天线宝宝": {
+  "天線寶寶": {
     "type": "image",
     "container": [
       {
@@ -1592,7 +1592,7 @@
       }
     ]
   },
-  "猫和老鼠": {
+  "貓和老鼠": {
     "type": "image",
     "container": [
       {
@@ -1721,7 +1721,7 @@
       }
     ]
   },
-  "bilibilitv":{
+  "小電視":{
     "type":"emoticon",
     "container":[
       {
