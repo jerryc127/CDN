@@ -63,13 +63,13 @@
   });
 
   function urlToLink(str) {
-    var re =/\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;
-    var re_forpic =/(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|jpeg|gif|png|webp)/g;
+    var re =/\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/ig;
+    var re_forpic =/\b(https?:\/\/\S+(?:png|jpe?g|gif)\S*)\b/ig;
     str = str.replace(re,function (website) {
       return `<a href='${website}' rel='noopener' target='_blank'>🚀鏈接</a>`;
     });
     str =str.replace(re_forpic,function (imgurl) {
-      return `<a href="${imgurl}" target='_blank'><img src="${imgurl}" 
+      return `<a href="${imgurl}" target='_blank'><img loading="lazy" src="${imgurl}" 
       onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/talk-error-placehold.png'"/></a>`;
     });
     return str;
