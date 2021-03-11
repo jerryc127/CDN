@@ -92,11 +92,7 @@
 
   function detect() {
     const js = 'https://cdn.jsdelivr.net/combine/gh/TencentCloudBase/cloudbase-js-sdk/cdnjs/1.4.1/cloudbase.js,gh/TencentCloudBase/cloudbase-js-sdk/cdnjs/1.4.1/cloudbase.auth.js,gh/TencentCloudBase/cloudbase-js-sdk/cdnjs/1.4.1/cloudbase.database.js'
-    if (typeof cloudbase === 'object') {
-      loadTalk()
-    } else {
-      getScript(js).then(loadTalk)
-    }
+    getScript(js).then(loadTalk)
   }
 
   window.pjax ? detect() : window.addEventListener('DOMContentLoaded', detect)
