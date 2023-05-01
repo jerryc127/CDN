@@ -355,7 +355,7 @@
     ]
   },
   "QQ": {
-    "type": "gif",
+    "type": "image",
     "container": [
       {
         "icon": "<img src=\"https://cdn.jsdelivr.net/gh/jerryc127/emoji@main/qq/aini.gif\" loading='lazy'>",
