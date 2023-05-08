@@ -1722,7 +1722,7 @@
     ]
   },
   "小電視":{
-    "type":"emoticon",
+    "type":"image",
     "container":[
       {
         "icon":"<img src='https://cdn.jsdelivr.net/gh/jerryc127/emoji@main/bilibilitv/[tv_doge].png' loading='lazy'>",
